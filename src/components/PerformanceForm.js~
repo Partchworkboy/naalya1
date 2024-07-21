@@ -1,0 +1,25 @@
+import React from "react";
+
+const PerformanceForm = ({ formData, handleChange, handleSubmit }) => {
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="name"
+        placeholder="Name"
+        value={formData.name}
+        onChange={handleChange}
+      />
+      <input
+        type="number"
+        name="performance"
+        placeholder="Performance"
+        value={formData.performance}
+        onChange={handleChange}
+      />
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default PerformanceForm;
